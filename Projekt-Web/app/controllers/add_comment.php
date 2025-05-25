@@ -19,7 +19,10 @@ if (!isset($_SESSION['user_id'])) {
 
 // Kontrola, zda byl formulář odeslán
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Získání a validace vstupních dat
+    // filter_input slouží k bezpečnému získání a validaci POST dat:
+    // INPUT_POST - určuje, že získáváme data z POST požadavku
+    // 'article_id' - název POST parametru, který chceme získat
+    // FILTER_VALIDATE_INT - zajišťuje, že hodnota je platné celé číslo
     $article_id = filter_input(INPUT_POST, 'article_id', FILTER_VALIDATE_INT);
     $content = trim($_POST['content'] ?? '');
     $user_id = $_SESSION['user_id'];

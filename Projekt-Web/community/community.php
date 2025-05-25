@@ -1,7 +1,4 @@
 <?php
-// Povolení zobrazení chyb pro vývoj
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
 /**
  * Komunitní stránka
@@ -99,9 +96,9 @@ try {
                                             <!-- Tělo karty s obsahem článku -->
                                             <div class="card-body">
                                                 <p class="card-text">
+                                                <!-- nl2br() převádí odřádkování v textu na HTML <br> tagy -->
                                                     <?= nl2br(htmlspecialchars($article['content'])) ?>
                                                 </p>
-                                                
                                                 <!-- Tlačítko pro zobrazení komentářů -->
                                                 <button class="btn btn-outline-secondary btn-sm" 
                                                         type="button" 
