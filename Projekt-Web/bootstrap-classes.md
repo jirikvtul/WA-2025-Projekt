@@ -52,6 +52,10 @@
   - `fw-bold`
   - `fw-normal`
   - `fw-light`
+- `lead` - Větší a světlejší text pro zvýraznění odstavců
+- `fs-*` - Velikost písma
+  - `fs-1` až `fs-6` - Od největší (1) po nejmenší (6)
+  - `fs-4` - Střední velikost písma
 
 ## Background
 - `bg-*` - Barva pozadí
