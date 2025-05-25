@@ -18,7 +18,7 @@ require_once '../../models/Article.php';
 // Spuštění session a kontrola přihlášení
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header("Location: /WA-2025-Kvajsar-Jiri/Projekt-Web/app/views/auth/login.php?error=please_login");
+    header("Location: /WA-2025-Projekt/Projekt-Web/app/views/auth/login.php?error=please_login");
     exit();
 }
 
@@ -73,7 +73,7 @@ if (isset($_GET['edit'])) {
                         </div>
                         <!-- Tělo formuláře -->
                         <div class="card-body p-4">
-                            <form action="/WA-2025-Kvajsar-Jiri/Projekt-Web/app/controllers/article_update.php" method="post">
+                            <form action="/WA-2025-Projekt/Projekt-Web/app/controllers/article_update.php" method="post">
                                 <!-- Skryté pole pro ID článku -->
                                 <input type="hidden" name="id" value="<?= $articleToEdit['id'] ?>">
                                 
@@ -118,7 +118,7 @@ if (isset($_GET['edit'])) {
             <div class="card-header bg-primary text-white py-3">
                 <div class="d-flex justify-content-between align-items-center">
                     <h2 class="h3 mb-0">Seznam článků</h2>
-                    <a href="/WA-2025-Kvajsar-Jiri/Projekt-Web/app/views/articles/article_create.php" class="btn btn-light btn-sm">
+                    <a href="/WA-2025-Projekt/Projekt-Web/app/views/articles/article_create.php" class="btn btn-light btn-sm">
                         Nový článek
                     </a>
                 </div>
@@ -163,7 +163,7 @@ if (isset($_GET['edit'])) {
                                                         Upravit
                                                     </a>
                                                     <!-- Tlačítko pro smazání s potvrzením -->
-                                                    <a href="/WA-2025-Kvajsar-Jiri/Projekt-Web/app/controllers/article_delete.php?id=<?= $article['id'] ?>" 
+                                                    <a href="/WA-2025-Projekt/Projekt-Web/app/controllers/article_delete.php?id=<?= $article['id'] ?>" 
                                                        class="btn btn-outline-danger"
                                                        onclick="return confirm('Opravdu chcete smazat tento článek?');">
                                                         Smazat

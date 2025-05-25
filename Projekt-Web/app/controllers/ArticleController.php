@@ -50,7 +50,7 @@ class ArticleController {
     public function createArticle() {
         // Kontrola přihlášení
         if (!$this->isUserLoggedIn()) {
-            header("Location: /WA-2025-Kvajsar-Jiri/Projekt-Web/app/views/auth/login.php?error=please_login");
+            header("Location: /WA-2025-Projekt/Projekt-Web/app/views/auth/login.php?error=please_login");
             exit();
         }
 
@@ -66,7 +66,7 @@ class ArticleController {
                 $error = 'Vyplňte prosím všechna povinná pole.';
             } elseif ($this->articleModel->create($title, $content, $user_id)) {
                 // Úspěšné vytvoření článku
-                header("Location: /WA-2025-Kvajsar-Jiri/Projekt-Web/community/community.php?success=created");
+                header("Location: /WA-2025-Projekt/Projekt-Web/community/community.php?success=created");
                 exit();
             } else {
                 $error = 'Chyba při ukládání článku.';
@@ -88,7 +88,7 @@ class ArticleController {
     public function listArticles() {
         // Kontrola přihlášení
         if (!$this->isUserLoggedIn()) {
-            header("Location: /WA-2025-Kvajsar-Jiri/Projekt-Web/app/views/auth/login.php?error=please_login");
+            header("Location: /WA-2025-Projekt/Projekt-Web/app/views/auth/login.php?error=please_login");
             exit();
         }
         // Načtení a zobrazení článků

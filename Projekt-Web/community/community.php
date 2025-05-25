@@ -42,7 +42,7 @@ try {
     <meta name="description" content="Komunitní sekce pro sdílení zkušeností a diskuzi o PC sestavách.">
     <meta name="author" content="Jiří Kvajsar">
     <title>Komunita | ReComp</title>
-    <link rel="icon" type="image/x-icon" href="/WA-2025-Kvajsar-Jiri/Projekt-Web/assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/WA-2025-Projekt/Projekt-Web/assets/favicon.ico">
     <!-- Externí CSS závislosti -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
@@ -119,7 +119,7 @@ try {
                                                 <div class="collapse mt-3" id="comments<?= $article['id'] ?>">
                                                     <?php if (isset($_SESSION['user_id'])): ?>
                                                         <!-- Formulář pro přidání komentáře (pouze pro přihlášené uživatele) -->
-                                                        <form action="/WA-2025-Kvajsar-Jiri/Projekt-Web/app/controllers/add_comment.php" method="POST" class="mb-3">
+                                                        <form action="/WA-2025-Projekt/Projekt-Web/app/controllers/add_comment.php" method="POST" class="mb-3">
                                                             <input type="hidden" name="article_id" value="<?= $article['id'] ?>">
                                                             <div class="form-group">
                                                                 <textarea name="content" class="form-control" rows="2" placeholder="Napište svůj komentář..." required></textarea>
@@ -129,7 +129,7 @@ try {
                                                     <?php else: ?>
                                                         <!-- Zpráva pro nepřihlášené uživatele -->
                                                         <div class="alert alert-info py-2 mb-3">
-                                                            Pro přidání komentáře se prosím <a href="/WA-2025-Kvajsar-Jiri/Projekt-Web/app/views/auth/login.php">přihlaste</a>.
+                                                            Pro přidání komentáře se prosím <a href="/WA-2025-Projekt/Projekt-Web/app/views/auth/login.php">přihlaste</a>.
                                                         </div>
                                                     <?php endif; ?>
 

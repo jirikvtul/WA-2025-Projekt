@@ -24,7 +24,7 @@
             <div class="col-lg-10">
                 <div class="card shadow-sm mb-4">
                     <div class="card-body">
-                        <h2 class="card-title h3 mb-4">Pochopení PC komponent a jejich kompatibility</h2>
+                        <h3 class="card-title h3 mb-4">Pochopení PC komponent a jejich kompatibility</h3>
                         <div class="card-text">
                             <p class="mb-4">Každá PC sestava se skládá minimálně ze 7 komponent, bez kterých není možné počítač zprovoznit:</p>
                             <ul class="list-unstyled mb-4">
@@ -37,7 +37,7 @@
                                 <li><strong>PC Case</strong> (skříň)</li>
                             </ul>
 
-                            <h3 class="h4 mb-3">Procesor a základní deska</h3>
+                            <h4 class="mb-3">Procesor a základní deska</h4>
                             <p class="mb-4">Tyto součástky jsou nezbytné pro chod počítače. Klíčová je jejich vzájemná kompatibilita. Nejdůležitější je shoda patice procesoru se základní deskou. Při zkoumání procesoru, například jednoho z aktuálně nejlepších herních procesorů AMD Ryzen 7 9800X3D, zjistíme, že nemá piny na sobě.</p>
                             
                             <div class="row mb-4 justify-content-center">
@@ -62,10 +62,10 @@
 
                             <p class="mb-4">Pro běžné nadšence nemá tato informace vliv na výkon systému, ale je důležité, aby se patice základní desky shodovala s procesorem. Z mého pohledu stojí za zmínku, že při nákupu použitého nebo poškozeného procesoru je výhodnější volit PGA patice, například AM4 od AMD. Pokud je procesor inzerován jako poškozený, může být příčinou ohnutý pin, který lze relativně jednoduše narovnat pomocí drobného plochého šroubováku nebo párátka. U LGA procesorů, jako jsou nové AM5 nebo moderní procesory Intel, je domácí oprava výrazně složitější.</p>
 
-                            <h3 class="h4 mb-3">Paměť RAM</h3>
+                            <h4 class="mb-3">Paměť RAM</h4>
                             <p class="mb-4">Po výběru platformy je třeba zaměřit se na kompatibilitu operační paměti. Nejnovější jsou paměti DDR5, ale při nákupu použitých či starších komponent se pravděpodobně setkáte s DDR4. Systém nebude fungovat, pokud paměti nesplňují požadavky základní desky.</p>
 
-                            <h3 class="h4 mb-3">Grafická karta</h3>
+                            <h4 class="mb-3">Grafická karta</h4>
                             <p class="mb-4">Následuje výběr grafické karty. Pro nejlepší herní výkon je ideální zvolit co nejvýkonnější kartu, kterou rozpočet dovolí, a ostatní komponenty případně omezit. Naopak pro střih videí nebo pracovní využití je vhodnější investovat do výkonnějšího procesoru a větší kapacity RAM. Grafické karty se připojují přes PCI-Express port, do kterého by měly pasovat všechny běžně dostupné karty. Rozdíly spočívají pouze ve výkonu a rozměrech.</p>
 
                             <div class="row mb-4 justify-content-center">
@@ -84,7 +84,7 @@
 
                             <p class="mb-4">V současnosti je 450 W považováno za nižší hodnotu, a osobně doporučuji volit zdroje s výkonem 600–650 W od kvalitních výrobců s vysokou efektivitou. Příliš slabý zdroj může potenciálně způsobit zkrat a poškodit celý systém, což by bylo značně nepříjemné.</p>
 
-                            <h3 class="h4 mb-3">Rozměry systému (Form-Factor MOBO)</h3>
+                            <h4 class="mb-3">Rozměry systému (Form-Factor MOBO)</h4>
                             <p class="mb-4">Dalším aspektem kompatibility jsou rozměry. Základní desky se dělí do tří hlavních kategorií podle fyzické velikosti:</p>
                             <ol class="mb-4">
                                 <li><strong>mini-ITX</strong></li>
@@ -95,7 +95,7 @@
                             <div class="row mb-4 justify-content-center">
                                 <div class="col-md-8">
                                     <img src="../images/MOBO_SIZE_COMPARASION.png" class="img-fluid rounded mb-2" alt="Porovnání velikostí základních desek">
-                                    <p class="text-muted small text-center">Porovnání velikostí základních desek <small class="text-muted">(Zdroj: Voltcave.com)</small></p>
+                                    <p class="text-muted small text-center">Porovnání velikostí základních desek </p>
                                 </div>
                             </div>
 
@@ -105,7 +105,7 @@
                                 <li><strong>m-ATX</strong> představuje zhruba dvoutřetinový formát ATX. Nabízí většinu funkcí ATX s úsporou místa.</li>
                                 <li><strong>mini-ITX</strong> je určen pro nejkompaktnější sestavy. Optimalizuje prostor, ale přináší výrazná omezení při stavbě, proto je vhodnější pro zkušené uživatele, kteří chtějí maximalizovat efektivitu.</li>
                             </ul>
-                            <h3 class="h4 mb-3">Pomocníci při výběru komponent</h3>
+                            <h4 class="mb-3">Pomocníci při výběru komponent</h4>
                             <p class="mb-4">Pro člověka, který se s těmito pojmy setkává poprvé, může být výběr komponent složitý a matoucí. Na internetu však existují stovky tutoriálů, které tyto aspekty podrobně vysvětlují a pomáhají s výběrem. Kromě toho portály jako <a href="https://pcpartpicker.com" target="_blank" class="text-decoration-none">PCPartPicker</a> nebo <a href="https://www.alza.cz/pc-konfigurator" target="_blank" class="text-decoration-none">Alza PC Konfigurátor</a> zajišťují, že zvolené komponenty budou vzájemně kompatibilní.</p>
                         </div>
                     </div>

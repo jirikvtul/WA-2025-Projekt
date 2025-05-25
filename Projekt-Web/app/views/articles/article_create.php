@@ -43,7 +43,7 @@ if (!isset($_SESSION['user_id'])) {
                     <!-- Tělo karty obsahující formulář -->
                     <div class="card-body p-4">
                         <!-- Formulář pro vytvoření článku -->
-                        <form action="/WA-2025-Kvajsar-Jiri/Projekt-Web/app/controllers/ArticleController.php" method="post">
+                        <form action="/WA-2025-Projekt/Projekt-Web/app/controllers/ArticleController.php" method="post">
                             <!-- Pole pro název článku -->
                             <div class="mb-4">
                                 <label for="title" class="form-label">

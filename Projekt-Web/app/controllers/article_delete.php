@@ -35,7 +35,7 @@ if (isset($_GET['id'])) {
     // Pokus o smazání článku
     if ($articleModel->delete($id, $user_id, $user_role)) {
         // Úspěšné smazání - přesměrování zpět na stránku pro úpravu a mazání
-        header("Location: /WA-2025-Kvajsar-Jiri/Projekt-Web/app/views/articles/article_edit_delete.php?success=deleted");
+        header("Location: /WA-2025-Projekt/Projekt-Web/app/views/articles/article_edit_delete.php?success=deleted");
         exit();
     } else {
         echo "Nemáte oprávnění k odstranění tohoto článku.";
